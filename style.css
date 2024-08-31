@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: blanchedalmond;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "navbar navbar" "sidebar main"  "sidebar footer";
+   
+   
+}
+
+nav{
+    grid-area: navbar;
+    background-color: blue;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+}
+aside{
+    position: sticky;
+    top: 50px;
+    align-self: start;
+    grid-area: sidebar;
+    background-color: cadetblue;
+   
+   
+      
+}
+main{
+    grid-area: main;
+    background-color: rgb(133, 143, 139);
+    
+}
+footer{
+    grid-area: footer;
+    padding: 2em;
+    background-color: black;
+}
